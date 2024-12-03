@@ -1,0 +1,7 @@
+__pycache__/
+prototypes/
+logs/
+checkpoints/
+output.txt
+*.log
+/mvtec
