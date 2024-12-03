@@ -1,0 +1,28 @@
+{
+    "dataset":{
+        "dataset_name": "mvtec-ad",
+        "data_path": "mvtec/mvtec_anomaly_detection",
+        "anomaly_source_path": "/data/dtd/images",
+        "prototype_path": "./prototypes"
+    },
+    "model": {
+        "model_name": "resnet18"
+    },
+    "optimizer": {
+        "learning_rate": 1e-4,
+        "weight_decay": 1e-1
+    },
+    "loss_functions": {
+        "focal_alpha": 0.25,
+        "focal_gamma": 5.0,
+        "loss_2_weight": 5 
+    },
+    "epochs": 100,
+    "batch_size": 26,
+    "num_anomalies": 50,
+    "eval_freq": 10,
+    "weight_lambda": 5,
+    "log_dir": "./logs",
+    "checkpoint_dir": "./checkpoints",
+    "class_name": "all"
+}
